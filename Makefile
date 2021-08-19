@@ -35,11 +35,11 @@ filesync-controller: $(idxSrc) vendor
 ifneq ($(noRace),)
 	go build -o $@ \
 		-ldflags "$(linkerVars)" \
-		github.com/cefco/cmd/filesync
+		./cmd/filesync
 else
 	go build -race -o $@ \
 		-ldflags "$(linkerVars)" \
-		github.com/cefco/cmd/filesync
+		./cmd/filesync
 endif
 
 filesync-controller-docker:
