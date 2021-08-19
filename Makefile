@@ -21,8 +21,8 @@ vendor: go.mod go.sum
 
 $(idxGenOut): vendor $(idxGenIn) hack/custom-boilerplate.go.txt
 	bash vendor/k8s.io/code-generator/generate-groups.sh all \
-		git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated \
-		git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/apis \
+		github.com/cefco/pkg/generated \
+		github.com/cefco/pkg/apis \
 		"filesync:v1alpha1" \
 		--go-header-file hack/custom-boilerplate.go.txt
 
@@ -35,11 +35,11 @@ filesync-controller: $(idxSrc) vendor
 ifneq ($(noRace),)
 	go build -o $@ \
 		-ldflags "$(linkerVars)" \
-		git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/cmd/filesync
+		github.com/cefco/cmd/filesync
 else
 	go build -race -o $@ \
 		-ldflags "$(linkerVars)" \
-		git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/cmd/filesync
+		github.com/cefco/cmd/filesync
 endif
 
 filesync-controller-docker:
