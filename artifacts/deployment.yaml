@@ -14,6 +14,8 @@ spec:
         name: filesync-controller
     spec:
       serviceAccountName: filesync-controller
+      nodeSelector:
+        kubernetes.io/hostname: board-27
       containers:
       - name: fsc
         image: idx/filesync-controller:0.4.0
