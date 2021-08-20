@@ -1,51 +1,44 @@
 # CEFCO
 
-Cloud-Edge File Coordination Operator
+Cloud-Edge File Coordination Operator, can transfer file from edge node to cloud by NATS.
 
-## Run For Test
+## Prepare
 
 ```bash
 # clone repo
 $ git clone https://github.com/inspursoft/cefco
 
-# create crd
-$ kubectl apply -f artifacts/crd.yaml
-# run for test
-$ make run
-
-# You have to build the Reader and Writer docker image before creating.
-# Get more info here:
-#   http://git.inspur.com/middleware/idx-component/docker
-# And then you need a stream and a consumer within the nats-jetstream
-# create an example
-$ kubectl apply -f artifacts/examples/example-mini.yaml
-# delete the example
-$ kubectl delete -f artifacts/examples/example-mini.yaml
+# deploy k8s master and nats-jetstream for cloud node
 ```
 
-## Build
+Build reader image for edge node and writer image for cloud, please refer the **[readme.md](filesync/readme.md)**
+
+
+
+## Build run
 
 ```bash
-# For executable
+# create crd
+$ kubectl apply -f artifacts/crd.yaml
+
+# run for test
 $ make filesync-controller VERSION=0.1.0 noRace=T
-# run
 $ ./filesync-controller --kubeconfig /root/.kube/config
 
-# For docker image
+# run for docker image
 $ make filesync-controller-docker filesyncVersion=0.1.0
 # push it to your registry
 # run
-$ kubectl apply -f artifacts/crd.yaml
 $ kubectl apply -f artifacts/rbac.yaml
 $ kubectl apply -f artifacts/deployment.yaml
 
 # create an example
 $ kubectl apply -f artifacts/examples/example-mini.yaml
-# delete the example
+# delete the example if undeploy
 $ kubectl delete -f artifacts/examples/example-mini.yaml
 ```
 
-## Tools
+## tip for nats-jetstream
 
 ```bash
 # Create a stream
