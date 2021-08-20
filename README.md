@@ -7,9 +7,9 @@ Cloud-Edge File Coordination Operator, can transfer file from edge node to cloud
 ```bash
 # clone repo
 $ git clone https://github.com/inspursoft/cefco
-
-# deploy k8s master and nats-jetstream for cloud node
 ```
+
+if not deploy nats2.2, deploy nats-jetstream for cloud node(refer https://docs.nats.io/nats-server/installation and https://docs.nats.io/jetstream/getting_started).
 
 Build reader image for edge node and writer image for cloud, please refer the **[readme.md](filesync/readme.md)**
 
