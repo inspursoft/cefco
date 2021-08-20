@@ -21,8 +21,8 @@ vendor: go.mod go.sum
 
 $(idxGenOut): vendor $(idxGenIn) hack/custom-boilerplate.go.txt
 	bash vendor/k8s.io/code-generator/generate-groups.sh all \
-		github.com/cefco/pkg/generated \
-		github.com/cefco/pkg/apis \
+		github.com/inspursoft/cefco/pkg/generated \
+		github.com/inspursoft/cefco/pkg/apis \
 		"filesync:v1alpha1" \
 		--go-header-file hack/custom-boilerplate.go.txt
 

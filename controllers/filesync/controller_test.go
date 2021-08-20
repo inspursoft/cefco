@@ -2,7 +2,7 @@ package filesync
 
 import (
 	"bytes"
-	"github.com/cefco/pkg/apis/filesync/v1alpha1"
+	"github.com/inspursoft/cefco/pkg/apis/filesync/v1alpha1"
 	"reflect"
 	"testing"
 	"text/template"

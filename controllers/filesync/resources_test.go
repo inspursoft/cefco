@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	filesyncv1alpha1 "github.com/cefco/pkg/apis/filesync/v1alpha1"
+	filesyncv1alpha1 "github.com/inspursoft/cefco/pkg/apis/filesync/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

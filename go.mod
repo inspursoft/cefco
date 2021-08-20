@@ -1,4 +1,4 @@
-module github.com/cefco
+module github.com/inspursoft/cefco
 
 go 1.15
 

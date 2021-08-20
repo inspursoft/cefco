@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/cefco/pkg/apis/filesync"
+	"github.com/inspursoft/cefco/pkg/apis/filesync"
 )
 
 // SchemeGroupVersion is group version used to register these objects

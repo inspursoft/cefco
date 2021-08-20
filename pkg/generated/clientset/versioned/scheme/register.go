@@ -14,7 +14,7 @@ http://git.inspur.com/middleware/idx-component
 package scheme
 
 import (
-	idxv1alpha1 "github.com/cefco/pkg/apis/filesync/v1alpha1"
+	idxv1alpha1 "github.com/inspursoft/cefco/pkg/apis/filesync/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

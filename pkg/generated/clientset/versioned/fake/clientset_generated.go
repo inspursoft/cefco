@@ -14,9 +14,9 @@ http://git.inspur.com/middleware/idx-component
 package fake
 
 import (
-	clientset "github.com/cefco/pkg/generated/clientset/versioned"
-	idxv1alpha1 "github.com/cefco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1"
-	fakeidxv1alpha1 "github.com/cefco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1/fake"
+	clientset "github.com/inspursoft/cefco/pkg/generated/clientset/versioned"
+	idxv1alpha1 "github.com/inspursoft/cefco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1"
+	fakeidxv1alpha1 "github.com/inspursoft/cefco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

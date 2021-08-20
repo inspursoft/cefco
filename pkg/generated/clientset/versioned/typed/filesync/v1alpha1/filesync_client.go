@@ -14,8 +14,8 @@ http://git.inspur.com/middleware/idx-component
 package v1alpha1
 
 import (
-	v1alpha1 "github.com/cefco/pkg/apis/filesync/v1alpha1"
-	"github.com/cefco/pkg/generated/clientset/versioned/scheme"
+	v1alpha1 "github.com/inspursoft/cefco/pkg/apis/filesync/v1alpha1"
+	"github.com/inspursoft/cefco/pkg/generated/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 
