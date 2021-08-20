@@ -16,7 +16,7 @@ package fake
 import (
 	"context"
 
-	v1alpha1 "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/apis/filesync/v1alpha1"
+	v1alpha1 "github.com/cefco/pkg/apis/filesync/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

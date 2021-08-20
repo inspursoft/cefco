@@ -14,10 +14,10 @@ import (
 	// Uncomment the following line to load the gcp plugin (only required to authenticate against GKE clusters).
 	// _ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 
-	fsCtl "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/controllers/filesync"
-	clientset "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/clientset/versioned"
-	informers "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/informers/externalversions"
-	"git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/signals"
+	fsCtl "github.com/cefco/controllers/filesync"
+	clientset "github.com/cefco/pkg/generated/clientset/versioned"
+	informers "github.com/cefco/pkg/generated/informers/externalversions"
+	"github.com/cefco/pkg/signals"
 )
 
 var (

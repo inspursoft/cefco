@@ -14,7 +14,7 @@ http://git.inspur.com/middleware/idx-component
 package v1alpha1
 
 import (
-	v1alpha1 "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/apis/filesync/v1alpha1"
+	v1alpha1 "github.com/cefco/pkg/apis/filesync/v1alpha1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"

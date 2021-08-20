@@ -14,7 +14,7 @@ http://git.inspur.com/middleware/idx-component
 package fake
 
 import (
-	v1alpha1 "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1"
+	v1alpha1 "github.com/cefco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

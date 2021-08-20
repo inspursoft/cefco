@@ -2,7 +2,7 @@ package filesync
 
 import (
 	"bytes"
-	"git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/apis/filesync/v1alpha1"
+	"github.com/cefco/pkg/apis/filesync/v1alpha1"
 	"reflect"
 	"testing"
 	"text/template"

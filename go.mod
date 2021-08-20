@@ -1,4 +1,4 @@
-module git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco
+module github.com/cefco
 
 go 1.15
 

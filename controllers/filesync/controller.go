@@ -25,11 +25,11 @@ import (
 	"k8s.io/client-go/util/workqueue"
 	"k8s.io/klog/v2"
 
-	filesyncv1alpha1 "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/apis/filesync/v1alpha1"
-	clientset "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/clientset/versioned"
-	filesyncscheme "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/clientset/versioned/scheme"
-	informers "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/informers/externalversions/filesync/v1alpha1"
-	listers "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/listers/filesync/v1alpha1"
+	filesyncv1alpha1 "github.com/cefco/pkg/apis/filesync/v1alpha1"
+	clientset "github.com/cefco/pkg/generated/clientset/versioned"
+	filesyncscheme "github.com/cefco/pkg/generated/clientset/versioned/scheme"
+	informers "github.com/cefco/pkg/generated/informers/externalversions/filesync/v1alpha1"
+	listers "github.com/cefco/pkg/generated/listers/filesync/v1alpha1"
 )
 
 const controllerAgentName = "filesync-controller"

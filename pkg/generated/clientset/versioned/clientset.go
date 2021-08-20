@@ -16,7 +16,7 @@ package versioned
 import (
 	"fmt"
 
-	idxv1alpha1 "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1"
+	idxv1alpha1 "github.com/cefco/pkg/generated/clientset/versioned/typed/filesync/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

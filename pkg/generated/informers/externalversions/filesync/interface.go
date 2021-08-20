@@ -14,8 +14,8 @@ http://git.inspur.com/middleware/idx-component
 package filesync
 
 import (
-	v1alpha1 "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/informers/externalversions/filesync/v1alpha1"
-	internalinterfaces "git.inspur.com/middleware/idx-component/docker/filesync/idx-ceco/pkg/generated/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/cefco/pkg/generated/informers/externalversions/filesync/v1alpha1"
+	internalinterfaces "github.com/cefco/pkg/generated/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.
