@@ -1,7 +1,7 @@
 FROM golang:1.15-alpine3.13 AS build
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories;\
-    apk add --no-cache make git
+    apk add --no-cache make git bash
 COPY . /go/src/github.com/inspursoft/cefco
 WORKDIR /go/src/github.com/inspursoft/cefco
 RUN go env -w GOPROXY=https://goproxy.cn,direct
