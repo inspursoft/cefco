@@ -30,9 +30,11 @@ $ make filesync-controller-docker filesyncVersion=0.1.0
 # push it to your registry
 # run
 $ kubectl apply -f artifacts/rbac.yaml
+# deploy the operator(assign the hostname and image version)
 $ kubectl apply -f artifacts/deployment.yaml
 
 # create an example
+# assign hostname and image for reader and writer, include nats ip and port
 $ kubectl apply -f artifacts/examples/example-mini.yaml
 # delete the example if undeploy
 $ kubectl delete -f artifacts/examples/example-mini.yaml
